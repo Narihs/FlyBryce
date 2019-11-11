@@ -1,0 +1,173 @@
+﻿@font-face {
+    font-family: 'JosefinSans-Regular';
+    src: url('../assets/fonts/JosefinSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'JosefinSans-SemiBold';
+    src: url('../assets/fonts/JosefinSans-SemiBold.ttf') format('truetype');
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: JosefinSans-Regular;
+    margin-bottom: 160px;
+    font-size: 20px;
+}
+
+.navbar {
+    font-size: 17px;
+    margin: 0;
+}
+
+    .navbar a {
+        color: black;
+    }
+
+        .navbar a:hover {
+            color: dodgerblue;
+        }
+
+#brandName {
+    font-size: 25px;
+    color: gray;
+}
+
+.navbar-toggle {
+    border: 1px solid gray;
+}
+
+.icon-bar {
+    background-color: gray;
+}
+
+#indexJumbotron {
+    text-align: center;
+    margin: 0;
+}
+
+#h2Jumbotron {
+    margin: 0;
+}
+
+#brandName:first-letter, #indexJumbotronSpan {
+    color: dodgerblue;
+}
+
+#footer {
+    position: absolute;
+    background-color: #99bdf7;
+    font-size: 15px;
+    width: 100%;
+    bottom: 0;
+    color: black;
+}
+
+    #footer a {
+        color: black;
+    }
+
+        #footer a:visited {
+            color: black;
+        }
+
+.footer-title {
+    font-weight: bold;
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+#img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8 {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    display: none;
+}
+
+#img1:hover .overlay, #img2:hover .overlay, #img3:hover .overlay,
+#img4:hover .overlay, #img5:hover .overlay, #img6:hover .overlay,
+#img7:hover .overlay, #img8:hover .overlay {
+    width: 50%;
+    height: 90%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    margin-left: 15px;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.weatherStat {
+    color: white;
+    font-size: 17px;
+    padding-left: 15px;
+    margin-top: 30%;
+}
+
+.active > a {
+    color: dodgerblue;
+}
+
+#contactForm > p > input, textarea {
+    width: 100%;
+}
+
+
+textarea {
+    height: 350px;
+}
+
+.aboutDescription {
+    margin-top: 20px;
+}
+
+.glyphicon-user, .glyphicon-pencil {
+    color: dodgerblue;
+}
+
+.goToTop {
+    font-size: 15px;
+}
+
+.glyph-footer {
+    width: 30px;
+}
+
+@media (max-width: 650px) {
+    body {
+        font-size: 17px;
+    }
+
+    #footer {
+        font-size: 10px;
+    }
+
+    #h2Jumbotron {
+        font-size: 22px;
+    }
+
+    #contactH2 {
+        font-size: 20px;
+    }
+
+    .weatherStat {
+        font-size: 14px;
+    }
+
+    .pull-right {
+        font-size: 15px;
+    }
+
+    .glyph-footer {
+        width: 20px;
+    }
+}
